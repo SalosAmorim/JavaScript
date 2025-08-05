@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03 JS</title>
+    <style>
+        body{
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>I will study JavaScript.</p>
+
+    <script>
+        var n1 = Number(window.prompt('Type a number: '))                          //  Para evitar a concatenaçao
+        var n2 = window.prompt('Type another one: ')                               // podemos converter string
+        sum = n1 + parseInt(n2)                                                    // para int ou float antes ou
+        // window.alert(`The sum of ${n1} and ${n2} is: ${sum}`)                   // durante a soma apenas 'number'
+        var name = window.prompt('Now type your name:')
+        document.writeln(`${name}, your name has ${name.length} letters.<br>`)
+        document.writeln(`The sum of ${n1} and ${n2} is ${sum}.`)
+
+        //  Para converter para string String(x)
+        //  Para converter para number Number(x)
+        
+        //Strings
+        // .length tamanho da string
+        // .toUpperCase() passa tudo para maiuscula
+        // .toLowerCase() passa tudo pra minuscula
+
+        //Numbers
+        // .toFixed(2) mostra o numero com 2 casas decimais
+        // .toFixed(2).replace('.', ',') troca o . do padrao americado por , 
+        // .toLocaleString('pt-BR'. {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>
