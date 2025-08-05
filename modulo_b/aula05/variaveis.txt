@@ -1,0 +1,27 @@
+Variáveis
+1- Podem começar com letras, $ ou _
+2- Não podem começar com números
+3- É possivél usar letras ou números
+4- É possivél usar acentos e símbolos
+5- Não podem conter espaços
+6- Não podem ser palavras reservadas
+
+let age = 27;
+
+'let' ou 'var' é chamada da variavel
+'age' é identificador
+= lê como 'recebe'
+
+Números inteiros ou int                                  //
+5 18 -12                                                 // Para o JS todos eles são do mesmo tipo
+Números reais, de ponto flutuante ou float               // number
+0.5 -15.9 3.14 8.0                                       //
+
+String
+"Google" 'JavaScript' `Maria` '1254asd'
+
+Boolean ou boll
+true false
+
+typeof age;
+
