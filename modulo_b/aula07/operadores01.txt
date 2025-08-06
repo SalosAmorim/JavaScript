@@ -1,0 +1,12 @@
+//Operadores
+//  aritimeticos
+//  + - * / % **
+//  ordem de precedencia:
+//  ()
+//  **
+//  * / %
+//  + -
+
+//Atribuicao
+//  simples: a = 5 + 3 ou a = 8 
+//  auto:    a = a + 5 ou n += 5

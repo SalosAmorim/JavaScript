@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03 JS</title>
+    <style>
+        body{
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Document Object Model</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae modi nemo reprehenderit aliquid sit optio eum pariatur officia a fugiat praesentium assumenda, ex dignissimos fuga molestiae necessitatibus! Labore, eius.</p>
+    <div id="msg">Click here!</div>
+
+    <script>
+        //metodos de acesso aos elementos
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`What is 'DOM'? ${p1.innerHTML}`)
+
+        var msg = window.document.getElementById('msg')
+        msg.innerText = "I'm waiting..."
+        msg.style.color = '#ffffff'
+        window.document.gete
+
+        //temos varias formas de acessar um elemento
+        // getElementsByTagName
+        // getElementById
+        // getElementsByClassName
+        // getElementsByName
+
+        //a mais recente é por seletor das CSS
+        // querySelector() ou querySelectorAll()
+
+        var msg = window.document.querySelector('div#msg')
+        msg.innerText = 'Selected by querySelector!'
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+//Operadores
+//  Relacionais
+//  < > >= <= == !=
+//  === igualdade restrita, compara tambem o tipo
+//  5 == '5' True mas 5 === '5' False
+
+//Logicos
+//  ! && ||
+
+//Ternario
+//  ? :
+//  teste ? true : false
+//  media >= 7.0 ? 'Aprovado' : 'Reprovado'
