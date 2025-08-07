@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06 JS</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div#mydiv{
+            background-color: chocolate;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.199);
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" onclick="clk()" onmouseenter="enter()" onmouseout="onout()">
+        Get out! <br> (¬_¬")
+    </div>
+    <script>
+        //Eventos DOM
+        //  mouseenter
+        //  mousemove
+        //  mousedown
+        //  mouseup
+        //  click
+        //  mouseout
+
+        function enter(){
+            var mydiv = window.document.getElementById('mydiv')
+            mydiv.innerHTML = `You're not crazy. <br> ( •̀ - •́ )`
+            mydiv.style.background = 'darkred'
+            mydiv.style.color = '#ffffff'
+        }
+
+        function onout(){
+            var mydiv = window.document.getElementById('mydiv')
+            mydiv.innerHTML = 'Yes, get out of here! <br>( •̀ - •́ )'
+            mydiv.style.background = 'chocolate'
+            mydiv.style.color = 'black'
+        }
+
+        function clk(){
+            var mydiv = window.document.querySelector('div#mydiv')
+            mydiv.innerHTML = 'Did you click on me? <br> (,,>﹏<,,)'
+            mydiv.style.background = 'pink'
+            mydiv.style.color = '#000000'
+        }
+
+    </script>
+</body>
+</html>

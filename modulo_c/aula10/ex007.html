@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07 JS</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        div#container{
+            width: 300px;
+            background-color: chocolate;
+            margin: auto;
+            align-content: center;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.199);
+        }
+
+        input{
+            font-size: 18px;
+        }
+        
+        #btnsum{
+            margin-top: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>The ultimate sum</h2>
+        <input type="number" name="number1" id="number1">
+        <p>+</p>
+        <input type="number" name="number2" id="number2">
+        <br>
+        <input type="button" value="Click to sum" id="btnsum" onclick="sum()">
+        <p id="res">Result...</p>
+    </div>
+    <script>
+        function sum(){
+            var n1 = Number(window.document.getElementById('number1').value)
+            var n2 = Number(window.document.getElementById('number2').value)
+
+            window.document.getElementById('number1').value = null
+            window.document.getElementById('number2').value = null
+
+            window.document.getElementById('res').innerHTML = `${n1} + ${n2} = ${n1 + n2}`
+        }
+    </script>
+</body>
+</html>
