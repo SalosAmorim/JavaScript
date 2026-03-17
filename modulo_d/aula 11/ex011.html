@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Check</title>
+</head>
+<body>
+    <h1>Where are you from?</h1>
+    <label for="country">Country</label>
+    <input type="text" name="txtcountry" id="txtcountry">
+    <input type="button" value="Check" onclick="CheckCountry()">
+    <div id="result"></div>
+
+    <script>
+        function CheckCountry(){
+            var country = document.getElementById('txtcountry').value
+            var result = document.getElementById('result')
+            if (country == 'brazil'){
+                result.innerHTML = `You're brazilian, me too.`
+            } else{
+                result.innerHTML = `You're not from here`
+            }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed camera</title>
+</head>
+<body>
+    
+    <h1>Speed Camera</h1>
+    <label for="txtspeed">Car speed:</label>
+    <input type="number" name="txtspeed" id="txtspeed">
+    <input type="button" value="Check" onclick="SpeedCheck()">
+    <div id="result"></div>
+
+    <script>
+        function SpeedCheck(){
+            var speed = Number(document.getElementById('txtspeed').value)
+            var result = document.getElementById('result')
+            result.innerHTML = `Car speed: ${speed}.<br>`
+            if(speed > 60){
+                result.innerHTML += `You got a speeding ticket.<br>`
+            }
+            result.innerHTML += `Always use seatbelt.`
+        }
+    </script>
+    
+</body>
+</html>
