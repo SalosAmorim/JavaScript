@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Let's count</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="inpStart">Start number:</label>
+                <input type="number" name="inpStart" id="startNumber" value="0">
+            </p>
+            <p>
+                <label for="inpEnd">End number:</label>
+                <input type="number" name="inpEnd" id="endNumber" value="0">
+            </p>
+            <p>
+                <label for="step">Step:</label>
+                <input type="number" name="step" id="stepNumber" value="1">
+            </p>
+            <p>
+                <input type="button" value="Start" onclick="count()">
+            </p>
+        </div>
+        <div id="result">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;SalosP_</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
